@@ -1,3 +1,6 @@
+NOTE: To review the Assingment, please review files Plot1,2,3,4.png and files Plot1,2,3,4.R  
+-----------------------------------------------------------------------------------
+
 ## Introduction
 
 This assignment uses data from
