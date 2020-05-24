@@ -21,7 +21,7 @@ plotsDataSubset$DateTime<-strptime(paste(plotsDataSubset$Date,plotsDataSubset$Ti
 
 #creating sub plot for DateTime, Global_active_power
 par(mfrow=c(2,2),mar=c(4,4,2,2))
-plot(plotsDataSubset$DateTime, plotsDataSubset$Global_active_power, ylab= "Global Active Power (klillowats)", xlab="", type='l')
+plot(plotsDataSubset$DateTime, plotsDataSubset$Global_active_power, ylab= "Global Active Power (kilowatts)", xlab="", type='l')
 #creating plot for DateTime, Voltage 
 plot(plotsDataSubset$DateTime, plotsDataSubset$Voltage, ylab= "Voltage", xlab="datetime", type='l')
 
@@ -32,8 +32,9 @@ points(plotsDataSubset$DateTime, plotsDataSubset$Sub_metering_3, col="blue", typ
 legend('topright' ,col=c("black","red","blue"),lwd=1,legend=names(plotsDataSubset[,7:9]))
 
 #creating sub plot for DateTime, Global_active_power
-plot(plotsDataSubset$DateTime, plotsDataSubset$Global_reactive_power, ylab= "Global_reactive_opwer", xlab="datetime", type='l')
+plot(plotsDataSubset$DateTime, plotsDataSubset$Global_reactive_power, ylab= "Global_reactive_power", xlab="datetime", type='l')
 #saving plot4 to plot4.png
 dev.copy(png,file="plot4.png",width=480, height=480)
 dev.off()
-dev.off(2)
+dev.off()
+

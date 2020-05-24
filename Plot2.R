@@ -15,9 +15,9 @@ plotsDataSubset$DateTime<-strptime(paste(plotsDataSubset$Date,plotsDataSubset$Ti
 
 #creating plot for DateTime, Global_active_power
 par(mfrow=c(1,1),mar=c(4,4,4,2))
-plot(plotsDataSubset$DateTime, plotsDataSubset$Global_active_power, ylab= "Global Active Power (klillowats)", xlab="", type='l')
+plot(plotsDataSubset$DateTime, plotsDataSubset$Global_active_power, ylab= "Global Active Power (kilowatts)", xlab="", type='l')
 #saving plot2 to plot2.png
 dev.copy(png,file="plot2.png",width=480, height=480)
 dev.off()
-dev.off(4)
+dev.off()
 
