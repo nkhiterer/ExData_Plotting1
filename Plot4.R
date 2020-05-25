@@ -29,7 +29,7 @@ plot(plotsDataSubset$DateTime, plotsDataSubset$Voltage, ylab= "Voltage", xlab="d
 plot(plotsDataSubset$DateTime, plotsDataSubset$Sub_metering_1, ylab= "Energy sub metering", xlab="", col="black",type='l')
 points(plotsDataSubset$DateTime, plotsDataSubset$Sub_metering_2, col="red", type="l")
 points(plotsDataSubset$DateTime, plotsDataSubset$Sub_metering_3, col="blue", type="l")
-legend('topright' ,col=c("black","red","blue"),lwd=1,legend=names(plotsDataSubset[,7:9]))
+legend("topright" ,col=c("black","red","blue"),lwd=1,legend=names(plotsDataSubset[,7:9]))
 
 #creating sub plot for DateTime, Global_active_power
 plot(plotsDataSubset$DateTime, plotsDataSubset$Global_reactive_power, ylab= "Global_reactive_power", xlab="datetime", type='l')
@@ -37,4 +37,3 @@ plot(plotsDataSubset$DateTime, plotsDataSubset$Global_reactive_power, ylab= "Glo
 dev.copy(png,file="plot4.png",width=480, height=480)
 dev.off()
 dev.off()
-
